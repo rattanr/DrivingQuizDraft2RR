@@ -48,7 +48,7 @@ public class SignUpActivity extends AppCompatActivity
                 } else {
                     databaseHelperLogIn.insertUserDetails(username, password);
                     Toast.makeText(getApplicationContext(), "Sign Up Successful", Toast.LENGTH_LONG).show();
-                    Intent intentBackHome=new Intent(getApplicationContext(),WelcomeActivity.class);
+                    Intent intentBackHome = new Intent(getApplicationContext(),WelcomeActivity.class);
                     startActivity(intentBackHome);
                 }
             }

@@ -44,7 +44,7 @@ public class WelcomeActivity extends AppCompatActivity
     {
 
         final Dialog dialog = new Dialog(WelcomeActivity.this);
-        dialog.setContentView(R.layout.activity_log_in); //pop up the activity_log_in.xml
+        dialog.setContentView(R.layout.activity_log_in);
         dialog.setTitle("User Login Pop Up");
 
         final EditText UserName = (EditText)dialog.findViewById(R.id.username);

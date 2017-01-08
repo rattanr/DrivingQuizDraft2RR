@@ -11,17 +11,6 @@
     tools:context="com.peterbateson.drivingquiz.WelcomeUserActivity">
 
     <TextView
-        android:text="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView30"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView27"
-        android:layout_alignStart="@+id/textView27" />
-
-    <TextView
         android:text="Welcome back,"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,19 +20,6 @@
         android:id="@+id/textView8"
         android:textSize="30sp"
         android:textColor="@android:color/black" />
-
-    <Button
-        android:text="Start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="23dp"
-        android:id="@+id/start_button"
-        android:textStyle="normal|bold"
-        android:background="@android:color/holo_green_light"
-        android:textSize="24sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,68 +34,53 @@
         android:layout_alignRight="@+id/textView8"
         android:layout_alignEnd="@+id/textView8" />
 
-    <TextView
-        android:text="Previous Highscores"
+    <Button
+        android:text="Sign Out"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_out_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_button"
+        android:textStyle="normal|bold"
+        android:background="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:layout_above="@+id/sign_out_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Your Previous Score"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView27"
         android:textSize="30sp"
         android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_marginTop="83dp"
         android:layout_below="@+id/welcomeUsername"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="104dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView13"
-        android:textSize="30sp"
+        android:id="@+id/previous_score"
+        android:textSize="40sp"
         android:textColor="@android:color/black"
-        android:layout_below="@+id/textView29"
-        android:layout_alignLeft="@+id/textView29"
-        android:layout_alignStart="@+id/textView29" />
-
-    <TextView
-        android:text="2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView29"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/textView30"
-        android:layout_alignLeft="@+id/textView30"
-        android:layout_alignStart="@+id/textView30" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/highScore1"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:hint="Play to add"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/highScore3"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:hint="Play to add"
-        android:layout_below="@+id/highScore2"
-        android:layout_alignLeft="@+id/highScore2"
-        android:layout_alignStart="@+id/highScore2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/highScore2"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:hint="Play to add"
-        android:layout_below="@+id/highScore1"
-        android:layout_centerHorizontal="true" />
+        android:hint="Not available"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
