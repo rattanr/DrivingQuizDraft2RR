@@ -19,9 +19,7 @@
         <activity android:name=".QuizActivity" />
         <activity android:name=".WelcomeUserActivity" />
         <activity android:name=".FinalScoreActivity" />
-        <activity android:name=".QuestionListActivity" />
         <activity android:name=".LogInActivity"></activity>
-
     </application>
 
 </manifest>

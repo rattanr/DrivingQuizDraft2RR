@@ -40,8 +40,6 @@ public class SignUpActivity extends AppCompatActivity
                 String username = enterUsername.getText().toString();
                 String password = enterPassword.getText().toString();
 
-
-
                 if(username.equals("")||password.equals(""))
                 {
                     Toast.makeText(getApplicationContext(), "You need both a password and a username to make an account!", Toast.LENGTH_LONG)

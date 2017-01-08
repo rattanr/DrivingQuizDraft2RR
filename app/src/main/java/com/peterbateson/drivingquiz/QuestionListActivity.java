@@ -35,58 +35,13 @@ public class QuestionListActivity extends AppCompatActivity {
     private Button mquestionSixteen;
 
 
-    private QuestionAnswers[] QuestionBank = new QuestionAnswers[] {
-            new QuestionAnswers(R.string.question_1, false),
-            new QuestionAnswers(R.string.question_2, true),
-            new QuestionAnswers(R.string.question_3, false),
-            new QuestionAnswers(R.string.question_4, false),
-            new QuestionAnswers(R.string.question_5, true),
-            new QuestionAnswers(R.string.question_6, false),
-            new QuestionAnswers(R.string.question_7, true),
-            new QuestionAnswers(R.string.question_8, true),
-            new QuestionAnswers(R.string.question_9, false),
-            new QuestionAnswers(R.string.question_10, true),
-            new QuestionAnswers(R.string.question_11, false),
-            new QuestionAnswers(R.string.question_12, false),
-            new QuestionAnswers(R.string.question_13, false),
-            new QuestionAnswers(R.string.question_14, true),
-            new QuestionAnswers(R.string.question_15, true),
-            new QuestionAnswers(R.string.question_16, true),
-    };
-
-    public void updateQuestionNumber()
-    {
-        int question = QuestionBank[Index].getmQuestion();
-        currentQuestion.setText(question);
-    }
-
+    QuizActivity QuestionList = new QuizActivity();
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_list);
-
-
-        mquestionOne = (Button)findViewById(R.id.questionOne);
-        mquestionOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Start = new Intent(QuestionListActivity.this, QuizActivity.class);
-                startActivity(Start);
-            }
-        });
-
-        mquestionTwo = (Button)findViewById(R.id.questionTwo);
-        mquestionTwo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                Intent Start = new Intent(QuestionListActivity.this, QuizActivity.class);
-                startActivity(Start);
-            }
-
-        });
-
     }
 
 }

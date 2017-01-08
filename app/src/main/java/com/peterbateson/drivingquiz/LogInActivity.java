@@ -25,5 +25,6 @@ public class LogInActivity extends AppCompatActivity
                 startActivity(userProfile);
             }
         });
+
     }}
 

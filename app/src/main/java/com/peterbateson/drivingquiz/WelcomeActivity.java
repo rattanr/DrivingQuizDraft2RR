@@ -58,6 +58,7 @@ public class WelcomeActivity extends AppCompatActivity
                 String usernameString = UserName.getText().toString();
                 String passwordString = Password.getText().toString();
 
+
                 String userPasswordString = databaseHelperLogIn.getUserDetails(usernameString);
 
                 if (!passwordString.equals(userPasswordString)) {

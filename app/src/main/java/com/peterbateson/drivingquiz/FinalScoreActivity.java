@@ -6,9 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FinalScoreActivity extends AppCompatActivity {
 
+    DatabaseHandler db = new DatabaseHandler(this);
 
     private Button mReturnToHome;
     private String mFinalScore;
@@ -25,13 +27,19 @@ public class FinalScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_final_score);
 
         mFinalScore = getIntent().getStringExtra("score");
+        db.addScore(mFinalScore);
 
         mReturnToHome = (Button)findViewById(R.id.return_to_home_button);
         mReturnToHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ReturnToHome = new Intent(FinalScoreActivity.this, WelcomeActivity.class);
+                Intent ReturnToHome = new Intent(FinalScoreActivity.this, LogInActivity.class);
                 startActivity(ReturnToHome);
+
+                String messageMultiplayer = "Now get your friend to log in!";
+
+                Toast.makeText(getApplicationContext(), messageMultiplayer, Toast.LENGTH_LONG)
+                        .show();
             }
         });
 
